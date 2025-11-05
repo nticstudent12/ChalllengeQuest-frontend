@@ -348,7 +348,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 ) : existingImageUrl && isEditMode ? (
                   <div className="flex items-center gap-2 p-3 border rounded-md bg-muted/20">
                     <img 
-                      src={existingImageUrl.startsWith('http') ? existingImageUrl : `${import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000'}/uploads/${existingImageUrl}`}
+                      src={existingImageUrl.startsWith('http') ? existingImageUrl : `${import.meta.env.VITE_API_URL?.replace('/api', '') || 'https://challengequest-backend.onrender.com'}/uploads/${existingImageUrl}`}
                       alt="Current challenge image" 
                       className="w-20 h-20 object-cover rounded-md"
                     />
